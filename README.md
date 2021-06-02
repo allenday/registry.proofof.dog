@@ -6,4 +6,3 @@ npm install -g pm2
 
 sudo pm2 start app.js
 
-setup DB password at .env
