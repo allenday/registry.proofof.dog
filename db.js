@@ -1,7 +1,10 @@
 const _ = require('lodash');
 const mongoose = require('mongoose');
+const dotenv = require('dotenv');
 
-const connectionString = 'mongodb+srv://dogeTag:SvhZeqx4sprynmAv@shop.auuyn.gcp.mongodb.net/dogeTagDB?retryWrites=true&w=majority';
+dotenv.config();
+
+const connectionString = 'mongodb+srv://'+process.env.DB_USER+':'+process.env.DB_PASSWORD+'@'+process.env.DB_SERVER+'/dogeTagDB?retryWrites=true&w=majority';
 mongoose.connect(connectionString, {useNewUrlParser: true, useUnifiedTopology: true, useFindAndModify: false});
 
 const Schema = mongoose.Schema;
