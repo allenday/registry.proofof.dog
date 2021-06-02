@@ -14,7 +14,6 @@ const UserSchema = new Schema({
     normalizedUsername: String,
     dogname: String,
     wifKey: String,
-    secretKey: String,
     publicKey: String,
     tweetUrl: String,
     active: Boolean
