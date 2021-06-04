@@ -2,7 +2,7 @@ const _ = require('lodash');
 const express = require('express');
 const cors = require('cors');
 
-const dbMongo = require('./db');
+const dbMongo = require('./firebase');
 
 const server = express();
 
